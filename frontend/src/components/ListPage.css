@@ -1,0 +1,236 @@
+/* General Styling */
+table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+thead tr th {
+  background-color: #c39d2d;
+  padding: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+thead {
+  padding: 10px;
+}
+th {
+  text-transform: uppercase;
+  width: 23rem;
+}
+
+td {
+  text-transform: capitalize;
+  padding: 5px;
+  border-bottom: 1px solid #433b3b4a;
+  width: 23rem;
+}
+
+td:first-child {
+  border-left: 1px solid #433b3b4a;
+}
+
+td:last-child {
+  border-right: 1px solid #433b3b4a;
+}
+
+h5 {
+  margin-left: 12px;
+  text-decoration: underline;
+  color: #7186b8;
+}
+
+/* List Page search container */
+.DateForm_Container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Date_input_field input {
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: 1px solid #7186b8;
+  color: #7186b8;
+  font-weight: 100;
+  text-align: center;
+}
+.Date_input_field label {
+  color: #7186b8;
+  font-weight: 700;
+  font-size: 16px;
+}
+.DateForm_input label {
+  color: #c39d2d;
+  font-weight: 700;
+  font-size: 18px;
+}
+.DateForm_input input {
+  margin-left: 10px;
+  color: #7186b8;
+  border: 1px solid #7186b8;
+  padding: 6px;
+}
+.Find_submit input {
+  color: white;
+  background-color: #7186b8;
+  padding: 7px 19px;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* FORM: date selector styling */
+form.DateForm {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  font-size: 14px;
+  align-items: center;
+  padding-bottom: 15px;
+}
+form.DateForm > div:last-child {
+  margin-left: 1rem;
+}
+
+.List_Page {
+  max-width: 1440px !important;
+  background-color: #fff;
+  max-width: 70%;
+  border: 15px solid rgb(232, 240, 254);
+  border-radius: 10px;
+  padding: 30px 0;
+  padding-top: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+table button {
+  font-size: 16px;
+}
+.List_Page--header {
+  text-align: left;
+  padding-left: 40px;
+  flex: 1;
+}
+.List_Page--header h1 {
+  padding-bottom: 60px;
+}
+.List_Page_Header--container {
+  display: flex;
+}
+.List_Page h1 {
+  margin: 0;
+}
+.List_Page img {
+  width: 200px;
+}
+.List_Page table {
+  width: 90%;
+  margin: 0 auto;
+}
+.List_Page tbody {
+  max-height: 365px;
+  overflow: scroll;
+  text-align: left;
+}
+.List_Page td {
+  font-size: 18px;
+}
+.List_Page thead {
+  background-color: #c39d2d;
+  text-align: left;
+}
+.List_Page tr {
+  background-color: #fff;
+}
+
+/* Form search button */
+.Submit_form-container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0 5px 0;
+}
+.Submit_form-container input {
+  color: white;
+  background-color: #7186b8;
+  padding: 7px 19px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.Submit_form-container input:hover {
+  transform: scale(1.1);
+}
+/* Styling Sorting Arrow */
+.SortBy {
+  margin-left: 1rem;
+  color: #fff;
+}
+.SortBy:hover {
+  cursor: pointer;
+}
+/* Styling prompt for selection */
+.Select__option {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 3;
+}
+.Select__option h4 {
+  font-size: 20px;
+}
+.Select__option h5{
+  font-size: 18px;
+}
+.Select_container {
+  flex: 3;
+}
+th button {
+  background-color: #c39d2d;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  padding: 5px 10px;
+  transition: all .4s;
+}
+.spanArrow {
+  margin-left: 6px;
+}
+th button:hover {
+  transform: scale(1.1);
+}
+/* ====================== Media Queries ======================================= */
+
+@media (max-width: 760px) {
+  thead tr th {
+    font-size: 9px;
+  }
+  .List_Page {
+    width: 100%;
+  }
+  .List_Page table {
+    width: 100%;
+  }
+  .Select__option {
+    flex-direction: column;
+  }
+  .Select__option h5 {
+    margin: 10px;
+  }
+  .Select__option h4 {
+    margin-bottom: 0px;
+  }
+  .List_Page {
+    max-width: 100% !important;
+    border: none !important;
+  }
+  .List_Page table {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .List_Page--header {
+    text-align: center !important;
+  }
+}

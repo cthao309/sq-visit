@@ -1,0 +1,4 @@
+{
+    "host_dev" : "http://localhost:3333",
+    "host_prod" : "PLACE PRODUCTION URL HERE"
+}

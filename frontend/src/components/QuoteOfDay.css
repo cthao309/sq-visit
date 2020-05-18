@@ -1,0 +1,18 @@
+ .QuoteOfDay__container {
+  display: flex;
+  flex-direction: column;
+}
+.QuoteOfDay__Form--input {
+  width: 70%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.QuoteOfDay__Form input {
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+}
+.QuoteOfDay__Form--input.Visitor_submit input {
+  width: 7rem;
+}

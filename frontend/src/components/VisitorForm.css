@@ -1,0 +1,124 @@
+/* General styling */
+body {
+  font-family: "merriweather", sans-serif;
+  /* background-color: rgba(50, 50, 50, 0.125); */
+  height: 100vh;
+  position: relative;
+}
+.errorStyle.Visitor_input{
+  border: 1px solid #f3adb9;
+}
+.errorStyle.Visitor_input::placeholder {
+  color: #f3adb9;;
+  font-weight: bold;
+}
+:focus {
+  outline: none;
+}
+/* Input field styling */
+input.Visitor_input {
+  padding: 5px 0;
+}
+.input_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.input_container input {
+  padding-bottom: 5px;
+}
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: #cacaca;
+}
+.input_container label {
+  display: flex;
+  flex-direction: column;
+}
+/* Visiting form styling */
+.Visitor_form_container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-top: 0;
+}
+.Visitor_Form {
+  border: 15px solid rgb(232, 240, 254);
+  border-radius: 10px;
+  padding-top: 0!important;
+  background-color: #fff;
+  max-width: 720px;
+  padding: 30px 0 25px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.Visitor_Form h1,
+.Visitor_Form h2 {
+  margin: 0;
+}
+.Visitor_Form h2 {
+  padding: 35px 0;
+  padding-bottom: 30px;
+  padding-top: 0;
+}
+.Visitor_Form img {
+  width: 270px;
+}
+.Visitor_input {
+  width: 500px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #7186b8;
+  color: #000;
+}
+.Visitor_input:focus,
+.Visitor_input:hover {
+  background-color: rgb(232, 240, 254) !important;
+}
+.Visitor_Form label {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #7186b8;
+}
+.Visitor_message {
+  font-size: 22px;
+  color: #c39d2d;
+  margin: 0 auto;
+  font-weight: 700;
+  font-style: italic;
+}
+.Visitor_Form_logo-section {
+  display: flex;
+  flex-direction: column;
+}
+.Visitor_Form_logo-text h1 {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.Visitor_Form_logo-section img {
+  margin-left: 5px;
+}
+.Visitor_submit {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 10px;
+}
+.Visitor_submit input {
+  color: white;
+  background-color: #7186b8;
+  padding: 7px 19px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.Visitor_submit input:hover {
+  transform: scale(1.1);
+}
